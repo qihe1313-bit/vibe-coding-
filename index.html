@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="一个简洁、现代、可直接部署到 GitHub 和 Vercel 的个人网站。"
+    />
+    <meta property="og:title" content="你的名字 | 个人网站" />
+    <meta
+      property="og:description"
+      content="作品、经历、想法和联系方式集中展示。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/hero-studio.jpg" />
+    <title>你的名字 | 个人网站</title>
+    <link rel="preload" href="./assets/hero-studio.jpg" as="image" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="回到首页">
+        <span class="brand-mark">N</span>
+        <span>你的名字</span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#work">作品</a>
+        <a href="#about">关于</a>
+        <a href="#notes">记录</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-label="个人介绍">
+        <img class="hero-image" src="./assets/hero-studio.jpg" alt="抽象工作室背景" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Portfolio / Notes / Contact</p>
+          <h1>你好，我是你的名字。</h1>
+          <p class="hero-copy">
+            我专注于把复杂问题做成清晰、可靠、好用的产品体验。这里收集我的项目、经历和一些长期思考。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">查看作品</a>
+            <a class="button secondary" href="mailto:hello@example.com">发邮件</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" aria-label="能力概览">
+        <div class="section-heading">
+          <p class="eyebrow">What I Do</p>
+          <h2>把想法推进到可交付状态。</h2>
+        </div>
+        <div class="capability-grid">
+          <article>
+            <span>01</span>
+            <h3>产品与策略</h3>
+            <p>拆解用户问题，定义范围、节奏和衡量方式，让团队知道该先做什么。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>设计与前端</h3>
+            <p>构建清爽的界面和顺手的交互，关注真实使用中的信息密度与效率。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>写作与表达</h3>
+            <p>把过程、判断和结果写清楚，让项目被理解，也让经验可以复用。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-label="精选作品">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>近期项目</h2>
+        </div>
+        <div class="work-list">
+          <article class="work-item">
+            <div>
+              <p class="work-meta">2026 / Web App</p>
+              <h3>项目名称 A</h3>
+            </div>
+            <p>
+              用一句话说明项目解决了什么问题、你负责了什么、最终带来了什么结果。
+            </p>
+            <a href="#" aria-label="查看项目名称 A">查看</a>
+          </article>
+          <article class="work-item">
+            <div>
+              <p class="work-meta">2025 / Research</p>
+              <h3>项目名称 B</h3>
+            </div>
+            <p>
+              可以放研究、产品方案、开源项目、课程作业或任何你希望别人先看到的成果。
+            </p>
+            <a href="#" aria-label="查看项目名称 B">查看</a>
+          </article>
+          <article class="work-item">
+            <div>
+              <p class="work-meta">2024 / Writing</p>
+              <h3>项目名称 C</h3>
+            </div>
+            <p>
+              如果暂时没有作品，也可以把这里改成“正在探索的方向”和“学习记录”。
+            </p>
+            <a href="#" aria-label="查看项目名称 C">查看</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="about" aria-label="关于我">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>我喜欢清晰的问题、扎实的执行和有温度的产品。</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            这里写一段更像你自己的介绍：你的背景、正在做的事、擅长的领域，以及你希望别人怎样联系或合作。
+          </p>
+          <p>
+            如果你正在找实习、工作或合作机会，可以把这段写得更直接。比如说明你想做的方向、所在城市和可开始时间。
+          </p>
+        </div>
+      </section>
+
+      <section class="section muted" id="notes" aria-label="文章与记录">
+        <div class="section-heading">
+          <p class="eyebrow">Notes</p>
+          <h2>最近记录</h2>
+        </div>
+        <div class="notes-grid">
+          <a class="note-card" href="#">
+            <span>思考</span>
+            <h3>如何把一个模糊想法变成可验证方案</h3>
+            <p>写下问题定义、取舍和下一步验证。</p>
+          </a>
+          <a class="note-card" href="#">
+            <span>复盘</span>
+            <h3>一个项目从 0 到 1 的过程记录</h3>
+            <p>保留关键节点，方便未来少走弯路。</p>
+          </a>
+          <a class="note-card" href="#">
+            <span>清单</span>
+            <h3>我常用的工具和工作流</h3>
+            <p>持续更新，让日常工作更轻一点。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-label="联系方式">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>有合适的项目或想法，欢迎联系。</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+          <a class="button secondary" href="https://github.com/yourname">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> 你的名字</span>
+      <a href="#home">回到顶部</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
